@@ -73,7 +73,7 @@ nav ul li a:hover::after{
 .header-text2 img{
     width: 455px;
     height: 270px;
-    margin-top: 15%;
+    margin-top: 10%;
 }
 .header{
     display: flex;
