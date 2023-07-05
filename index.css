@@ -134,6 +134,9 @@ nav ul li a:hover::after{
     display: flex;
     margin: 20px 0 40px;
 }
+.tab-titles p{
+    margin-right: 30px;
+}
 .tab-links{
     margin-right: 0px;
     font-size: 18px;
@@ -166,7 +169,6 @@ nav ul li a:hover::after{
 .tap-contents ul li span{
     color: #ff004f;
     font-size: 14px;
-
 }
 .tab-contents{
     display: none;
@@ -447,5 +449,4 @@ nav .fa-solid{
     margin-top: -40px;
     display: block;
 }
-
 
