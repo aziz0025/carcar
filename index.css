@@ -476,15 +476,13 @@ nav .fa-solid{
     }
     
     .header-text{
-        margin-top: 30%;
+        margin-top: 40px;
         font-size: 16px;
-        text-align: center;
+        
     }
     ul.menu{
         width: 335px;
         height: 335px;
-        text-align: center;
-        align-items: center;
     }
     #about{
         margin-top: 350px;
@@ -528,7 +526,13 @@ nav .fa-solid{
         margin-bottom: 30px;
     }
     .header{
-        display: inline-block;
+        display: inline;
+    }
+    .header h1{
+        font-size: 20px;
+    }
+    .header h2 span{ 
+        font-size: 40px;
     }
     .header-text2 img{
         width: 335px;
