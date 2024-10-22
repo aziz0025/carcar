@@ -6,7 +6,9 @@
     <title>Document</title>
     <link rel="stylesheet" href="index.css">
     <script src="https://kit.fontawesome.com/74fef44d19.js" crossorigin="anonymous"></script>
-
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Link to the external JavaScript file for additional scripts -->
+    <script src="js/scripts.js"></script>
 </head>
 <body>
     <div id="header">
@@ -25,14 +27,96 @@
             </nav>
            <div class="header">
             <div class="header-text">
-                <h2><span>66-20-20</span></h2>
+                <h2><span>66-2001-20</span></h2>
                 <h1>предоставляем услугу<br>эвакуации <span>(Автоэвакуация)</span>
                 <br> с лучшим сервисом<br>и лучшей ценой.</h1>
                 <a href="./img/ima1.html" class="btn-gaz">Галерея</a>
                 <a href="./pdf/pdf.html" class="btn-gaz">Прайс лист</a>
               </div>
               <div class="header-text2">
-                  <img src="images/444.png">
+                  <!-- Icon menu container -->
+  <ul class="menu">
+    <!-- Menu toggle button -->
+    <div class="menuToggle"><ion-icon name="add-outline"></ion-icon></div>
+    <!-- Menu items with icons and colors -->
+    <li style="--i: 0; --clr: #ff2972">
+      <a href="#"><ion-icon name="home-outline"></ion-icon></a>
+    </li>
+    <li style="--i: 1; --clr: #fee800">
+      <a href="#"><ion-icon name="settings-outline"></ion-icon></a>
+    </li>
+    <li style="--i: 2; --clr: #04fc43">
+      <a href="#"><ion-icon name="mail-outline"></ion-icon></a>
+    </li>
+    <li style="--i: 3; --clr: #fe00f1">
+      <a href="#"><ion-icon name="key-outline"></ion-icon></a>
+    </li>
+    <li style="--i: 4; --clr: #00b0fe">
+      <a href="#"><ion-icon name="camera-outline"></ion-icon></a>
+    </li>
+    <li style="--i: 5; --clr: #fea600">
+      <a href="#"><ion-icon name="game-controller-outline"></ion-icon></a>
+    </li>
+    <li style="--i: 6; --clr: #a529ff">
+      <a href="#"><ion-icon name="person-outline"></ion-icon></a>
+    </li>
+    <li style="--i: 7; --clr: #01bdab">
+      <a href="#"><ion-icon name="videocam-outline"></ion-icon></a>
+    </li>
+  </ul>
+
+  <!-- Audio elements for sound effects -->
+  <audio id="toggleSound">
+    <source src="audio/close.mp3" type="audio/mpeg">
+    <source src="audio/close.ogg" type="audio/ogg">
+  </audio>
+
+  <audio id="openSound">
+    <source src="audio/open.mp3" type="audio/mpeg">
+    <source src="audio/open.ogg" type="audio/ogg">
+  </audio>
+
+  <audio id="hoverSound">
+    <source src="audio/beep.mp3" type="audio/mpeg">
+    <source src="audio/beep.ogg" type="audio/ogg">
+  </audio>
+
+  <!-- JavaScript code to handle menu toggle and hover sounds -->
+  <script>
+    $(document).ready(function() {
+      var toggleSound = $("#toggleSound")[0];
+      var openSound = $("#openSound")[0];
+      var hoverSound = $("#hoverSound")[0];
+
+      let menuToggle = document.querySelector(".menuToggle");
+      let menu = document.querySelector(".menu");
+
+      menuToggle.onclick = function () {
+        menu.classList.toggle("active");
+        toggleSound.currentTime = 0; // Reset the audio to start from the beginning
+        toggleSound.play();
+        if (menu.classList.contains("active")) {
+          openSound.currentTime = 0; // Reset the audio to start from the beginning
+          openSound.play();
+        }
+      };
+
+      $("a").mouseenter(function() {
+        hoverSound.currentTime = 0; // Reset the audio to start from the beginning
+        hoverSound.play();
+      });
+    });
+  </script>
+
+  <!-- Ionicons for menu icons -->
+  <script
+    type="module"
+    src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+  ></script>
+  <script
+    nomodule
+    src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+  ></script>
               </div>
            </div>
         </div>
