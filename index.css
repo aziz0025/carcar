@@ -18,7 +18,7 @@ body{
     background: #080808;
 }
 .container{
-    padding: 10px 10%;
+    padding: 5% 5%;
 }
 nav{
     display: flex;
@@ -26,7 +26,16 @@ nav{
     justify-content: space-between;
     flex-wrap: wrap;
 }
-.logo{
+#logo {
+    font-size: 50px;
+    font-weight: 1000;
+    width: 160px;
+
+}
+#logo span{
+    color: #ff004f;
+    font-size: 60px;
+    font-weight: 1000;
     width: 160px;
 }
 nav ul li{
@@ -37,7 +46,7 @@ nav ul li{
 nav ul li a{
     color: #5ff;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 30px;
     position: relative;
 }
 nav ul li a::after{
@@ -65,24 +74,34 @@ nav ul li a:hover::after{
 .header-text h1 span{
     color: #ff004f;
 }
-.header-text h2 span{
-    font-size: 60px;
+h2{
     font-weight: 1000;
+    font-size: 40px;
+}
+h2 span{
+    font-weight: 1000;
+    font-size: 40px;
     color: #ff004f;
 }
 .header-text2 {
-    width: 455px;
-    height: 270px;
-    margin-top: 10%;
-    .menu {
+    width: 260px;
+    height: 260px;
+}
+.header .header-text2{
+    text-align: center;
+    
+}
+.menu {
         position: relative;
         width: 260px;
         height: 260px;
         display: flex;
         align-items: center;
         justify-content: center;
-      }
-      .menu li {
+       
+}
+
+.menu li {
         position: absolute;
         left: 0;
         list-style: none;
@@ -90,11 +109,11 @@ nav ul li a:hover::after{
         transform-origin: 130px;
         transition: 0.5s;
         transition-delay: calc(0.1s * var(--i));
-      }
-      .menu.active li {
+}
+.menu.active li {
         transform: rotate(calc(360deg / 8 * var(--i)));
-      }
-      .menu a {
+}
+.menu a {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -108,11 +127,11 @@ nav ul li a:hover::after{
         color: transparent;
         transition-delay: 0.5s;
         filter: drop-shadow(0 0 2px var(--clr));
-      }
-      .menu.active a {
+}
+.menu.active a {
         color: var(--clr);
-      }
-      .menu a::before {
+}
+.menu a::before {
         content: "";
         position: absolute;
         width: 20px;
@@ -122,8 +141,8 @@ nav ul li a:hover::after{
         transform: rotate(calc(90deg * var(--i))) translate(0, 25px);
         transition: width 0.5s, height 0.5s, transform 0.5s;
         transition-delay: 0.5s, 1s, 1.5s;
-      }
-      .menu.active a::before {
+}
+.menu.active a::before {
         width: 50px;
         height: 50px;
         background: #161616;
@@ -134,15 +153,15 @@ nav ul li a:hover::after{
         border-radius: 10px;
         filter: drop-shadow(0 0 5px var(--clr));
         rotate: 135deg;
-      }
-      .menu.active li:hover a::before {
+}
+.menu.active li:hover a::before {
         background: var(--clr);
-      }
-      .menu.active li:hover a ion-icon {
+}
+.menu.active li:hover a ion-icon {
         color: #161616;
-      }
+}
       
-      .menuToggle {
+.menuToggle {
         position: absolute;
         width: 60px;
         height: 60px;
@@ -155,11 +174,11 @@ nav ul li a:hover::after{
         cursor: pointer;
         font-size: 32px;
         transition: 1.5s;
-      }
-      .menu.active .menuToggle {
-        transform: rotate(315deg);
-      }
 }
+.menu.active .menuToggle {
+        transform: rotate(315deg);
+}
+
 .header{
     display: flex;
     margin-top: 10%;
@@ -221,6 +240,10 @@ nav ul li a:hover::after{
 }
 .tab-titles p{
     margin-right: 30px;
+    
+}
+#about11{
+    font-size: 20px;
 }
 .tab-links{
     margin-right: 0px;
@@ -268,24 +291,24 @@ nav ul li a:hover::after{
     padding: 30px 0;
 
 }
-.services-list{
+.services-list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 40px;
     margin-top: 50px;
 }
-.services-list div{
-    background: #262626;
+.services-list div {
+    background: #fff;
     padding: 40px;
     font-size: 13px;
     font-weight: 300;
     border-radius: 10px;
     transition: background 0.5s, transform 0.5s;
 }
+
 .services-list div img{
     width: 50px;
     height: 50px;
-    color: #fff;
     margin-bottom: 30px;
 
 }
@@ -480,10 +503,7 @@ nav .fa-solid{
         font-size: 16px;
         
     }
-    ul.menu{
-        width: 335px;
-        height: 335px;
-    }
+    
     #about{
         margin-top: 350px;
         padding: 0 0 0 0 ;
@@ -532,16 +552,21 @@ nav .fa-solid{
         font-size: 20px;
     }
     .header h2 span{ 
+        font-weight: 1000;
         font-size: 40px;
+        color: #ff004f;
     }
-    .header-text2 img{
-        width: 335px;
-        height: 170px;
-        margin-top: 15%;
+    .header .header-text2 {
+        
+        margin-left: 23px;
+        margin-top: 10%;
     }
+    
+    
     .contact-right, .contact-left{
         flex-basis: 100%;
     }
+    
 
 }
 #msg{

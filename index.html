@@ -1,127 +1,115 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="index.css">
-    <script src="https://kit.fontawesome.com/74fef44d19.js" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <!-- Link to the external JavaScript file for additional scripts -->
-    <script src="js/scripts.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="index.css">
+  <script src="https://kit.fontawesome.com/74fef44d19.js" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- Link to the external JavaScript file for additional scripts -->
+  <script src="js/scripts.js"></script>
 </head>
 <body>
-    <div id="header">
-        <div class="container">
-            <nav>
-                <img src="images/logo.png" class="logo">
-                <ul id="sidemenu">
-                    <li><a href="#header">Дом</a></li>
-                    <li><a href="#about">О нас</a></li>
-                    <li><a href="#services">Услуги</a></li>
-                    <li><a href="#portfolio">Портфолио</a></li>
-                    <li><a href="#contact">Контакт</a></li>
-                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
-                </ul>
-                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
-            </nav>
-           <div class="header">
-            <div class="header-text">
-                <h2><span>66-2001-20</span></h2>
-                <h1>предоставляем услугу<br>эвакуации <span>(Автоэвакуация)</span>
-                <br> с лучшим сервисом<br>и лучшей ценой.</h1>
-                <a href="./img/ima1.html" class="btn-gaz">Галерея</a>
-                <a href="./pdf/pdf.html" class="btn-gaz">Прайс лист</a>
-              </div>
-              <div class="header-text2">
-                  <!-- Icon menu container -->
-  <ul class="menu">
-    <!-- Menu toggle button -->
-    <div class="menuToggle"><ion-icon name="add-outline"></ion-icon></div>
-    <!-- Menu items with icons and colors -->
-    <li style="--i: 0; --clr: #ff2972">
-      <a href="#"><ion-icon name="home-outline"></ion-icon></a>
-    </li>
-    <li style="--i: 1; --clr: #fee800">
-      <a href="#"><ion-icon name="settings-outline"></ion-icon></a>
-    </li>
-    <li style="--i: 2; --clr: #04fc43">
-      <a href="#"><ion-icon name="mail-outline"></ion-icon></a>
-    </li>
-    <li style="--i: 3; --clr: #fe00f1">
-      <a href="#"><ion-icon name="key-outline"></ion-icon></a>
-    </li>
-    <li style="--i: 4; --clr: #00b0fe">
-      <a href="#"><ion-icon name="camera-outline"></ion-icon></a>
-    </li>
-    <li style="--i: 5; --clr: #fea600">
-      <a href="#"><ion-icon name="game-controller-outline"></ion-icon></a>
-    </li>
-    <li style="--i: 6; --clr: #a529ff">
-      <a href="#"><ion-icon name="person-outline"></ion-icon></a>
-    </li>
-    <li style="--i: 7; --clr: #01bdab">
-      <a href="#"><ion-icon name="videocam-outline"></ion-icon></a>
-    </li>
-  </ul>
-
-  <!-- Audio elements for sound effects -->
-  <audio id="toggleSound">
-    <source src="audio/close.mp3" type="audio/mpeg">
-    <source src="audio/close.ogg" type="audio/ogg">
-  </audio>
-
-  <audio id="openSound">
-    <source src="audio/open.mp3" type="audio/mpeg">
-    <source src="audio/open.ogg" type="audio/ogg">
-  </audio>
-
-  <audio id="hoverSound">
-    <source src="audio/beep.mp3" type="audio/mpeg">
-    <source src="audio/beep.ogg" type="audio/ogg">
-  </audio>
-
-  <!-- JavaScript code to handle menu toggle and hover sounds -->
-  <script>
-    $(document).ready(function() {
-      var toggleSound = $("#toggleSound")[0];
-      var openSound = $("#openSound")[0];
-      var hoverSound = $("#hoverSound")[0];
-
-      let menuToggle = document.querySelector(".menuToggle");
-      let menu = document.querySelector(".menu");
-
-      menuToggle.onclick = function () {
-        menu.classList.toggle("active");
-        toggleSound.currentTime = 0; // Reset the audio to start from the beginning
-        toggleSound.play();
-        if (menu.classList.contains("active")) {
-          openSound.currentTime = 0; // Reset the audio to start from the beginning
-          openSound.play();
-        }
-      };
-
-      $("a").mouseenter(function() {
-        hoverSound.currentTime = 0; // Reset the audio to start from the beginning
-        hoverSound.play();
-      });
-    });
-  </script>
-
-  <!-- Ionicons for menu icons -->
-  <script
-    type="module"
-    src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
-  ></script>
-  <script
-    nomodule
-    src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
-  ></script>
-              </div>
-           </div>
+  <div id="header">
+    <div class="container">
+      <nav>
+        <h1 id="logo"><span>B</span>akhshi</h1>
+        <ul id="sidemenu">
+          <li><a href="#header"><i class="fa-solid fa-image"></i>Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+        </ul>
+        <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+      </nav>
+      <div class="header">
+        <div class="header-text">
+          <h2><span>Bakhshi </span>Auto Service</h2>
+          <h1>"Take care of your car so that it always remains at peak performance.
+          <br> Periodic car service is a guarantee of its safety and longevity.
+          <br> With our specialized <span>Services</span>, your car will be like the first day.
+          <br> Take action for the health of your car today!"</h1>
         </div>
-        
-    </div>
+        <div class="header-text2">
+          <!-- Icon menu container -->
+          <ul class="menu">
+            <!-- Menu toggle button -->
+            <div class="menuToggle"><ion-icon name="add-outline"></ion-icon></div>
+            <!-- Menu items with icons and colors -->
+            <li style="--i: 0; --clr: #ff2972">
+              <a href="#header"><ion-icon name="home-outline"></ion-icon></a>
+            </li>
+            <li style="--i: 2; --clr: #04fc43">
+            <a href="#contact"><ion-icon name="mail-outline"></ion-icon></a>
+            </li>
+            <li style="--i: 4; --clr: #00b0fe">
+              <a href="#"><ion-icon name="call-outline"></ion-icon></a>
+            </li>
+            <li style="--i: 6; --clr: #a529ff">
+              <a href="#"><ion-icon name="person-outline"></ion-icon></a>
+            </li>
+            
+          </ul>
+
+              <!-- Audio elements for sound effects -->
+              <audio id="toggleSound">
+                <source src="audio/close.mp3" type="audio/mpeg">
+                <source src="audio/close.ogg" type="audio/ogg">
+              </audio>
+
+               <audio id="openSound">
+                 <source src="audio/open.mp3" type="audio/mpeg">
+                 <source src="audio/open.ogg" type="audio/ogg">
+               </audio>
+
+               <audio id="hoverSound">
+                 <source src="audio/beep.mp3" type="audio/mpeg">
+                 <source src="audio/beep.ogg" type="audio/ogg">
+               </audio>
+
+                <!-- JavaScript code to handle menu toggle and hover sounds -->
+                <script>
+                  $(document).ready(function() {
+                    var toggleSound = $("#toggleSound")[0];
+                    var openSound = $("#openSound")[0];
+                    var hoverSound = $("#hoverSound")[0];
+              
+                    let menuToggle = document.querySelector(".menuToggle");
+                    let menu = document.querySelector(".menu");
+
+                    menuToggle.onclick = function () {
+                      menu.classList.toggle("active");
+                      toggleSound.currentTime = 0; // Reset the audio to start from the beginning
+                      toggleSound.play();
+                      if (menu.classList.contains("active")) {
+                        openSound.currentTime = 0; // Reset the audio to start from the beginning
+                        openSound.play();
+                      }
+                    };
+
+                    $("a").mouseenter(function() {
+                      hoverSound.currentTime = 0; // Reset the audio to start from the beginning
+                      hoverSound.play();
+                    });
+                  });
+                </script>
+
+                <!-- Ionicons for menu icons -->
+                <script
+                  type="module"
+                  src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+                ></script>
+                <script
+                  nomodule
+                  src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+                ></script>
+        </div>
+      </div>
+    </div>     
+  </div>
 <!-- ------------------------------------------------------about------------------------------------------------------- -->
 <div id="about">
     <div class="container">
@@ -131,9 +119,10 @@
                 <img src="images/car1.jpg">
             </div>
             <div class="about-col-2">
-                <h1 class="sub-title">О нас</h1>
-                <p>У нас лучшие специалисты с опытом и навыками ремонта и замены автозапчастей в нужном месте и передовое оборудование,
-                    помимо этого мы предоставляем услугу эвакуации (<span><b>автоэвакуация</b></span>) с лучшим сервисом и лучшей ценой к вашим услугам , Дорогие клиенты.</p>
+                <h1 class="sub-title">About <span>WE</span></h1>
+                <p id="about11">"With years of experience in providing professional car services, we are committed to maintaining the optimal performance and safety of your cars.
+                <br> Our team, using expertise and up-to-date technologies, provides accurate and high-quality services so that your car is always in the best possible condition.
+                <br>  Our goal is to satisfy you and ensure safe and worry-free travels."</p>
 
 
                     <div class="tab-titles">
@@ -171,26 +160,32 @@
 
 <div id="services">
     <div class="container">
-        <h1 class="sub-title">Наши услуги</h1>
+        <h1 class="sub-title">Services</h1>
         <div class="services-list">
             <div>
-                <img src="images/crankshaft (1).png">
-                <h2>Ремонт двигателя</h2>
+                <img src="images/airbag_27.png">
+                <h2>Airbag Services</h2>
                 <p>Опытные и знающие специалисты в области ремонта двигателей.</p>
                 <a href="services/en.html">Узнать больше</a>
             </div>
             <div>
-                <img src="images/gear-box (1).png">
-                <h2>Ремонт коробки передач</h2>
+                <img src="images/computer_52.png">
+                <h2>Auto Programming</h2>
                 <p>Опытные и знающие специалисты в области ремонта коробок передач.</p>
                 <a href="services/gr.html">Узнать больше</a>
             </div>
             <div>
-                <img src="images/chassis (1).png">
-                <h2>Ремонт и замена</h2>
+                <img src="images/cpu_37.png">
+                <h2>Auto Electronics</h2>
                 <p>Опытные и знающие специалисты в области ремонта и замены автомобильных запчастей.</p>
                 <a href="services/p.html">Узнать больше</a>
             </div>
+            <div>
+              <img src="images/speedometer_13.png">
+              <h2>Odometer Calibration</h2>
+              <p>Опытные и знающие специалисты в области ремонта и замены автомобильных запчастей.</p>
+              <a href="services/p.html">Узнать больше</a>
+          </div>
         </div>
     </div>
 </div>
